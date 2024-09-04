@@ -1,2 +1,2 @@
-# decoration_company
+# decoration
 A theme WordPress build for decoration company
