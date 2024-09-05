@@ -1,0 +1,32 @@
+:root{
+    --nl-pink: #d63384;
+    --nl-red: #dc3545;
+    --nl-orange: #fd7e14;
+    --nl-yellow: #ffc107;
+    --nl-background:#F6F5F2;
+}
+body {
+    background-color: var(--nl-background);
+    font-size: var(--font-size-large);
+}
+
+.button {
+    background-color: var(--nl-orange);
+    color: white;
+  
+    &:hover {
+      background-color: lightblue;
+    }
+  }
+  
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+
+    .content {
+        padding-top: 102px;
+    }
+
+}
