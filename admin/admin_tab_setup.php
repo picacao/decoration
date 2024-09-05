@@ -1,6 +1,14 @@
 <?php inframe_url ();?>
 <form method="post" action="">
 
+    <h4 class="mt-3">Footer</h4>
+    <div class="row pt-2">
+        <div class="col-md-2"><label>Footer Line</label></div>
+        <div class="col-md-8">
+        <input type="text" class="form-control" name="footer_line" value="<?php echo  $get_footer_line; ?>"/>     
+        </div> 
+    </div>
+
     <h4 class="mt-3">Social</h4>
     <div class="row pt-2">
         <div class="col-md-2"><label>Facebook Link</label></div>

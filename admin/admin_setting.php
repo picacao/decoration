@@ -3,8 +3,8 @@ add_action('admin_menu','namsan_admin_setting');
 function namsan_admin_setting(){
       // Add parent menu admin
       add_menu_page(
-        'Namsan Options',
-        'Namsan Options',
+        'Inlightchiushing',
+        'Inlightchiushing',
         'manage_options',
         'namsan',//menu_slug
         'namsan_admin_dashboard',
@@ -67,7 +67,6 @@ function setup () {
     if (!empty($_POST['save-option-settings']))
     {
             // Khai báo
-
             $setup_mem_discount = $_POST['setup_mem_discount'];
             $setup_gst_percent = $_POST['setup_gst_percent'];
 
@@ -78,11 +77,14 @@ function setup () {
             $setup_facebook = $_POST['setup_facebook']; 
             $setup_instagram = $_POST['setup_instagram']; 
             $setup_twitter = $_POST['setup_twitter']; 
+
+            $footer_line = $_POST['footer_line'];
     
             // Cập nhật (nếu chưa có thì hệ thống tự thêm mới)
             update_option('setup_mem_discount', $setup_mem_discount);
             update_option('setup_gst_percent', $setup_gst_percent);
 
+            update_option('footer_line', $footer_line);
 
             update_option('setup_address', $setup_address);
             update_option('setup_email', $setup_email);
@@ -100,8 +102,9 @@ function setup () {
     $get_setup_facebook = get_option('setup_facebook');
     $get_setup_instagram = get_option('setup_instagram');
     $get_setup_twitter = get_option('setup_twitter');
+    $get_footer_line = get_option('footer_line');
 
-    require_once ( 'admin_tab_setup.php' ) ;      
+    require_once ('admin_tab_setup.php' ) ;      
 }
 ?>
 <?php function inframe_url (){ ?>
