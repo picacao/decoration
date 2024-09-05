@@ -2,8 +2,8 @@
 function new_widgets_init() {
         
     register_sidebar( array(
-      'name' => 'Side Bar',
-      'id' => 'side-bar',
+      'name' => 'Side Bar HK',
+      'id' => 'side-bar-hk',
       'description' => __( 'Wiget Sidebar'),
       'before_widget' => '<div id="%1$s" class="sidebar">',
       'after_widget' => '</div>',
@@ -11,8 +11,8 @@ function new_widgets_init() {
       'after_title' => '</h2>',
     ) );
     register_sidebar( array(
-        'name' => 'Footer Right',
-        'id' => 'footer-right',
+        'name' => 'Footer Right HK',
+        'id' => 'footer-right-hk',
         'description' => __( 'footer ở trang chủ'),
         'before_widget' => '<div id="%1$s">',
         'after_widget' => '</div>',
@@ -20,8 +20,8 @@ function new_widgets_init() {
         'after_title' => '</h3>',
     ) );
     register_sidebar( array(
-        'name' => 'Footer Mid One',
-        'id' => 'footer-mid-one',
+        'name' => 'Footer Mid One HK',
+        'id' => 'footer-mid-one-hk',
         'description' => __( 'footer ở trang chủ'),
         'before_widget' => '<div id="%1$s">',
         'after_widget' => '</div>',
@@ -29,8 +29,8 @@ function new_widgets_init() {
         'after_title' => '</h3>',
     ) );
     register_sidebar( array(
-        'name' => 'Footer Mid Two',
-        'id' => 'footer-mid-two',
+        'name' => 'Footer Mid Two HK',
+        'id' => 'footer-mid-two-hk',
         'description' => __( 'footer ở trang chủ'),
         'before_widget' => '<div id="%1$s">',
         'after_widget' => '</div>',
@@ -38,8 +38,8 @@ function new_widgets_init() {
         'after_title' => '</h3>',
     ) );
     register_sidebar( array(
-        'name' => 'Footer Left',
-        'id' => 'footer-left',
+        'name' => 'Footer Left HK',
+        'id' => 'footer-left-hk',
         'description' => __( 'footer ở trang chủ'),
         'before_widget' => '<div id="%1$s">',
         'after_widget' => '</div>',
