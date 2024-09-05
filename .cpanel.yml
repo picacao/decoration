@@ -1,0 +1,6 @@
+deployment:
+  tasks:
+    - export WP_CONTENT_DIR=/home/sinomaxh/inlightchiushing.com.hk/wp-content
+    - /bin/rm -rf $WP_CONTENT_DIR/themes/decoration
+    - /bin/mkdir -p $WP_CONTENT_DIR/themes/decoration
+    - /bin/cp -r . $WP_CONTENT_DIR/themes/decoration
