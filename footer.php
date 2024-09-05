@@ -1,3 +1,4 @@
+<footer>
 <div class="container-fluid">
     <div class="row pb-4">
         <div class="col-md-3">
@@ -19,6 +20,7 @@
         </div>
     </div>
 </div>
+</footer>
 <script src="<?php bloginfo('template_url');?>/static/js/bootstrap.bundle.min.js"></script>
 <script src="<?php bloginfo('template_url');?>/static/js/popper.min.js"></script>
 <script src="<?php bloginfo('template_url');?>/static/js/bootstrap.min.js"></script>
