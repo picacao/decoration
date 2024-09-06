@@ -46,6 +46,11 @@ body {
     border-top: 1px solid #dee2e6 !important;
 }
 
+.wp-block-image {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 /* Footer */
 ul.wp-block-list {
     list-style: none;
