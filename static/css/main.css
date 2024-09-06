@@ -6,7 +6,15 @@
     --nl-background:#F6F5F2;
 
     --nl-font: "Poppins", sans-serif;
+
+    --bs-dark:#000;
 }
+a{
+    color: var(--bs-dark);
+    text-decoration: none;
+    transition: 0.3s color ease-out;
+}
+
 body {
     background-color: var(--nl-background);
     font-size: var(--font-size-large);
@@ -35,4 +43,16 @@ body {
 }
 .border-top {
     border-top: 1px solid #dee2e6 !important;
+}
+
+/* Footer */
+ul.wp-block-list {
+    list-style: none;
+    padding-left: 0; /* Corrected padding value */
+    text-transform: uppercase;
+    line-height: 2rem;
+
+    &:hover {
+        color: #d63384;
+    }
 }
