@@ -7,7 +7,8 @@
 
     --nl-font: "Poppins", sans-serif;
 
-    --bs-dark:#000;
+    --bs-dark:#0d0d0d;
+    
 }
 a{
     color: var(--bs-dark);
@@ -52,7 +53,7 @@ ul.wp-block-list {
     text-transform: uppercase;
     line-height: 2rem;
 
-    &:hover {
+    &li:hover {
         color: #d63384;
     }
 }

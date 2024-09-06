@@ -1,5 +1,5 @@
 <footer class="mt-5">
-<div class="container-fluid">
+<div class="container">
     <div class="row pb-4">
         <div class="col-md-3">
         <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Right') );?>
@@ -21,9 +21,7 @@
     </div>
 </div>
 </footer>
-<script src="<?php bloginfo('template_url');?>/static/js/bootstrap.bundle.min.js"></script>
-<script src="<?php bloginfo('template_url');?>/static/js/popper.min.js"></script>
-<script src="<?php bloginfo('template_url');?>/static/js/bootstrap.min.js"></script>
+
 <?php wp_footer(  );?>
 </body>
 </html>
