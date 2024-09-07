@@ -10,7 +10,7 @@
                 <div class="col-lg-4 col-md-6">
                     <article class="post-item pb-5 image-zoom-effect">
                       <div class="post-image overflow-hidden">
-                      <?php the_post_thumbnail('large', array()); ?>
+                      <?php the_post_thumbnail('large', array('class' => 'img-fluid')); ?>
                       </div>
                       <div class="post-content">
                         <div class="post-meta text-uppercase py-3">
