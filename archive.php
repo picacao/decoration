@@ -18,7 +18,7 @@
                           <?php
                 $categories = get_the_category();
                 foreach( $categories as $category ) {
-                    echo $category->name . ', ';
+                    echo $category->name . ' ';
                 }
             ?>
                           </span> / <span class="meta-date"><?php the_date(); ?></span>
