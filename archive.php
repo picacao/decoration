@@ -1,7 +1,36 @@
 <?php get_header(); ?>
-<?php if (have_posts()) : ?>
-	<?php while (have_posts()) : the_post(); ?>
-    <?php the_content_rss('',false,'',50);?>
-    <?php endwhile; ?>
-<?php endif; ?>
+
+    <div class="post-wrap my-5 py-5">
+        <div class="container-fluid">
+          <div class="row">
+            <main class="post-list post-card-small">
+                <div class="row">
+                <?php if (have_posts()) : ?>
+                    <?php while (have_posts()) : the_post(); ?>
+                <div class="col-lg-4 col-md-6">
+                    <article class="post-item pb-5 image-zoom-effect">
+                      <div class="post-image overflow-hidden">
+                      <?php the_post_thumbnail(); ?>
+                      </div>
+                      <div class="post-content">
+                        <div class="post-meta text-uppercase py-3">
+                          <span class="post-category">Furniture</span> / <span class="meta-date">12 jan, 2023</span>
+                        </div>
+                        <h5 class="post-title text-uppercase">
+                          <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+                        </h5>
+                        <p><?php the_content_rss('',false,'',50);?></p>
+                      </div>
+                    </article>
+                </div>
+                <?php endwhile; ?>
+                <?php endif; ?>
+                </div>
+            </main>
+            </div>
+            </div>
+            </div>
+
+
+
 <?php get_footer(); ?>
