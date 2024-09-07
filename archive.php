@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
     <div class="post-wrap my-5 py-5">
-        <div class="container-fluid">
+        <div class="container">
           <div class="row">
             <main class="post-list post-card-small">
                 <div class="row">
@@ -14,12 +14,12 @@
                       </div>
                       <div class="post-content">
                         <div class="post-meta text-uppercase py-3">
-                          <span class="post-category">Furniture</span> / <span class="meta-date">12 jan, 2023</span>
+                          <span class="post-category">Furniture</span> / <span class="meta-date"><?php the_date(); ?></span>
                         </div>
                         <h5 class="post-title text-uppercase">
                           <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
                         </h5>
-                        <p><?php the_content_rss('',false,'',50);?></p>
+                        <p><?php the_content_rss('',false,'',20);?></p>
                       </div>
                     </article>
                 </div>
