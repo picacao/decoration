@@ -20,7 +20,7 @@
                         <h5 class="post-title text-uppercase">
                           <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
                         </h5>
-                        <p><?php the_excerpt(); ?></p>
+                        <!-- <p><?php the_excerpt(); ?></p> -->
                       </div>
                     </article>
                 </div>
