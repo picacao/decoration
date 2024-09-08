@@ -27,6 +27,17 @@ function custom_excerpt_length( $length ) {
   return 20; // Thay đổi 20 bằng số lượng từ mong muốn
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+//
+function get_page_content_by_id($page_id) {
+  $page = get_page($page_id);
+
+  if ($page) {
+      return $page->post_content;
+  } else {
+      return false;
+  }
+}
  
 // Start of Paganavi 
 function wp_corenavi() { 
