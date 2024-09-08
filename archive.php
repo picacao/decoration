@@ -26,7 +26,7 @@
                         <h5 class="post-title text-uppercase">
                           <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
                         </h5>
-                        <p><?php echo wp_trim_words( get_the_content(), 50 ); ?></p>
+                        <p><?php the_excerpt(); ?></p>
                       </div>
                     </article>
                 </div>
