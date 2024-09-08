@@ -21,6 +21,12 @@ add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
    add_theme_support( 'woocommerce' );
 }
+
+//
+function custom_excerpt_length( $length ) {
+  return 20; // Thay đổi 20 bằng số lượng từ mong muốn
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
  
 // Start of Paganavi 
 function wp_corenavi() { 
