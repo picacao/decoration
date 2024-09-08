@@ -15,7 +15,7 @@
                       <div class="post-content">
                         <div class="post-meta text-uppercase py-3">
                           <span class="post-category">
-                         <span class="meta-date"><?php the_date(); ?></span>
+                         <!-- <span class="meta-date"><?php the_date(); ?></span> -->
                         </div>
                         <h5 class="post-title text-uppercase">
                           <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
