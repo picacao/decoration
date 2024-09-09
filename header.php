@@ -14,6 +14,8 @@
   <link href="<?php bloginfo('template_url');?>/style.css" rel="stylesheet">
   <script src="<?php bloginfo('template_url');?>/static/js/jquery.min.js"></script>
   <script src="<?php bloginfo('template_url');?>/static/js/main.js"></script>
+  <script src="<?php bloginfo('template_url');?>/static/js/plugins.js"></script>
+  <script src="<?php bloginfo('template_url');?>/static/js/script.js"></script>
   <script src="<?php bloginfo('template_url');?>/static/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 <script src="<?php bloginfo('template_url');?>/static/js/popper.min.js"></script>

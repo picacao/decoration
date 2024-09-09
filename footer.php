@@ -22,7 +22,7 @@
 </div>
 </footer>
 
-<?php wp_footer(  );?>
+<?php wp_footer( );?>
 <script src="<?php bloginfo('template_url');?>/static/js/swiper-bundle.min.js"></script>
 </body>
 </html>
