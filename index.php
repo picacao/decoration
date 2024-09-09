@@ -31,7 +31,7 @@
         <div class="row">
           <div class="display-header pb-3 d-flex justify-content-between flex-wrap col-md-12">
             <h2 class="display-2 text-dark text-uppercase">Our Featured Products</h2> 
-            <a href="shop.html" class="btn btn-medium btn-arrow btn-normal position-relative">
+            <a href="#" class="btn btn-medium btn-arrow btn-normal position-relative">
               <span class="text-uppercase">Shop All</span>            
               <svg class="arrow-right position-absolute" width="18" height="20">
                 <use xlink:href="#arrow-right"></use>
@@ -46,7 +46,7 @@
                 <div class="swiper-slide">
                   <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
                     <div class="image-holder">
-                      <img src="images/product-item1.jpg" alt="product-item" class="product-image img-fluid">
+                      <img src="<?php bloginfo('template_url');?>/static/img/product-item4.jpg" alt="product-item" class="product-image img-fluid">
                     </div>
                     <div class="cart-concern">
                       <h3 class="card-title text-uppercase pt-3 text-primary">
@@ -61,7 +61,7 @@
                 <div class="swiper-slide">
                   <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
                     <div class="image-holder">
-                      <img src="images/product-item2.jpg" alt="product-item" class="product-image img-fluid">
+                      <img src="<?php bloginfo('template_url');?>/static/img/product-item4.jpg" alt="product-item" class="product-image img-fluid">
                     </div>
                     <div class="cart-concern">
                       <h3 class="card-title text-uppercase pt-3 text-primary">
@@ -78,7 +78,7 @@
                 <div class="swiper-slide">
                   <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
                     <div class="image-holder">
-                      <img src="images/product-item3.jpg" alt="product-item" class="product-image img-fluid">
+                      <img src="<?php bloginfo('template_url');?>/static/img/product-item4.jpg" alt="product-item" class="product-image img-fluid">
                     </div>
                     <div class="cart-concern">
                       <h3 class="card-title text-uppercase pt-3 text-primary">
@@ -95,7 +95,7 @@
                 <div class="swiper-slide">
                   <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
                     <div class="image-holder">
-                      <img src="images/product-item4.jpg" alt="product-item" class="product-image img-fluid">
+                      <img src="<?php bloginfo('template_url');?>/static/img/product-item4.jpg" alt="product-item" class="product-image img-fluid">
                     </div>
                     <div class="cart-concern">
                       <h3 class="card-title text-uppercase pt-3 text-primary">
@@ -112,7 +112,7 @@
                 <div class="swiper-slide">
                   <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
                     <div class="image-holder">
-                      <img src="images/product-item5.jpg" alt="product-item" class="product-image img-fluid">
+                      <img src="<?php bloginfo('template_url');?>/static/img/product-item4.jpg" alt="product-item" class="product-image img-fluid">
                     </div>
                     <div class="cart-concern">
                       <h3 class="card-title text-uppercase pt-3 text-primary">
@@ -129,7 +129,7 @@
                 <div class="swiper-slide">
                   <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
                     <div class="image-holder">
-                      <img src="images/product-item6.jpg" alt="product-item" class="product-image img-fluid">
+                      <img src="<?php bloginfo('template_url');?>/static/img/product-item4.jpg" alt="product-item" class="product-image img-fluid">
                     </div>
                     <div class="cart-concern">
                       <h3 class="card-title text-uppercase pt-3 text-primary">
