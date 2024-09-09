@@ -2,7 +2,16 @@
 
 <section id="billboard" class="overflow-hidden style2">
     <div class="banner-item"
-      style="background-image: url(<?php bloginfo('template_url');?>/static/img/banner-image.jpg); background-repeat: no-repeat; width: 100%; height: 682px; background-position: center; display: flex; align-items: center;">
+      style="background-image: url(<?php bloginfo('template_url');?>/static/img/banner-image.jpg); background-repeat: no-repeat; width: 100%; height: 682px;background-position: center; display: flex; align-items: center;
+    background-repeat: no-repeat;
+    width: 100%;   
+    background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;    
+    box-sizing: border-box;
+      ">
       <div class="banner-content padding-large text-center mx-auto">
         <h1 class="display-1 text-uppercase text-light pb-2">wooden table set</h1>
         <p class="mx-auto text-light">Aliquet donec ut arcu risus amet mattis diam gravida. Ac vestibulum quis proin in
