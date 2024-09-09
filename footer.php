@@ -14,7 +14,7 @@
         <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Left') );?>
         </div>
     </div>
-    <div class="row border-top text-center pt-4">
+    <div class="row border-top text-center pt-4 pb-4">
         <div class="col-md-12">
             <?php echo get_option('footer_line');?>
         </div>
