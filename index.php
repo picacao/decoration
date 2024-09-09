@@ -30,12 +30,12 @@
       <div class="container-fluid">
         <div class="row">
           <div class="display-header pb-3 d-flex justify-content-between flex-wrap col-md-12">
-            <h2 class="display-2 text-dark text-uppercase">Our Featured Products</h2> 
+            <h2 class="display-2 text-dark text-uppercase">Our Products</h2> 
             <a href="#" class="btn btn-medium btn-arrow btn-normal position-relative">
-              <span class="text-uppercase">Shop All</span>            
+              <!-- <span class="text-uppercase">Shop All</span>            
               <svg class="arrow-right position-absolute" width="18" height="20">
                 <use xlink:href="#arrow-right"></use>
-              </svg>
+              </svg> -->
             </a>
           </div>
         </div>
@@ -43,106 +43,34 @@
           <div id="featured-swiper" class="product-swiper col-md-12">
             <div class="swiper">
               <div class="swiper-wrapper">
+    <?php   
+    $featured_query = array(
+        'category_name' => get_option('productsset_category'),
+        'post_type'    =>    'post',
+        'order' => 'DESC', 
+        'orderby'    => 'date',
+        'posts_per_page' => 3
+        
+    );
+    global $post;
+    $featured_query = new WP_Query( $featured_query );
+    if( $featured_query->have_posts() ) : while( $featured_query->have_posts() ) : $featured_query->the_post();   
+?>    
                 <div class="swiper-slide">
                   <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
                     <div class="image-holder">
-                      <img src="<?php bloginfo('template_url');?>/static/img/product-item4.jpg" alt="product-item" class="product-image img-fluid">
+                    <a href="<?php the_permalink() ?>">
+                    <?php the_post_thumbnail('large', ['class' => 'img-fluid post-image']); ?></a>
                     </div>
                     <div class="cart-concern">
                       <h3 class="card-title text-uppercase pt-3 text-primary">
-                        <a href="single-product.html" class="text-primary">Black Sofa Set</a>
+                      <a href="<?php the_permalink() ?>"><?php echo $post->post_title ; ?></a>
                       </h3>
-                      <div class="cart-info">
-                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART"><span>$200</span></a>
-                      </div>
+                     
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
-                    <div class="image-holder">
-                      <img src="<?php bloginfo('template_url');?>/static/img/product-item4.jpg" alt="product-item" class="product-image img-fluid">
-                    </div>
-                    <div class="cart-concern">
-                      <h3 class="card-title text-uppercase pt-3 text-primary">
-                        <a href="single-product.html" class="text-primary">Circle Dining Table</a>
-                      </h3>
-                      <div class="cart-info">
-                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
-                          <span>$200</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
-                    <div class="image-holder">
-                      <img src="<?php bloginfo('template_url');?>/static/img/product-item4.jpg" alt="product-item" class="product-image img-fluid">
-                    </div>
-                    <div class="cart-concern">
-                      <h3 class="card-title text-uppercase pt-3 text-primary">
-                        <a href="single-product.html" class="text-primary">Minimal Sofa</a>
-                      </h3>
-                      <div class="cart-info">
-                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
-                          <span>$200</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
-                    <div class="image-holder">
-                      <img src="<?php bloginfo('template_url');?>/static/img/product-item4.jpg" alt="product-item" class="product-image img-fluid">
-                    </div>
-                    <div class="cart-concern">
-                      <h3 class="card-title text-uppercase pt-3 text-primary">
-                        <a href="single-product.html" class="text-primary">Pattern Tea Table</a>
-                      </h3>
-                      <div class="cart-info">
-                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
-                          <span>$200</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
-                    <div class="image-holder">
-                      <img src="<?php bloginfo('template_url');?>/static/img/product-item4.jpg" alt="product-item" class="product-image img-fluid">
-                    </div>
-                    <div class="cart-concern">
-                      <h3 class="card-title text-uppercase pt-3 text-primary">
-                        <a href="single-product.html" class="text-primary">Black Sofa Set</a>
-                      </h3>
-                      <div class="cart-info">
-                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
-                          <span>$200</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
-                    <div class="image-holder">
-                      <img src="<?php bloginfo('template_url');?>/static/img/product-item4.jpg" alt="product-item" class="product-image img-fluid">
-                    </div>
-                    <div class="cart-concern">
-                      <h3 class="card-title text-uppercase pt-3 text-primary">
-                        <a href="single-product.html" class="text-primary">Minimal Sofa</a>
-                      </h3>
-                      <div class="cart-info">
-                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
-                          <span>$200</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+      <?php  endwhile; endif; ?>           
               </div>
             </div>
             <div class="swiper-pagination text-center mt-5"></div>
@@ -155,9 +83,9 @@
         <div class="row">
           <div class="review-content position-relative">
             <div class="swiper-icon swiper-arrow swiper-arrow-prev position-absolute d-flex align-items-center justify-content-center">
-              <svg class="icon-arrow" width="25" height="25">
-                <use xlink:href="#arrow-left" />
-              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+</svg>
             </div>
             <div class="swiper testimonial-swiper">
               <div class="quotation text-center">
@@ -187,9 +115,9 @@
               </div>
             </div>
             <div class="swiper-icon swiper-arrow swiper-arrow-next position-absolute d-flex align-items-center justify-content-center">
-              <svg class="icon-arrow" width="25" height="25">
-                <use xlink:href="#arrow-right" />
-              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg>
             </div>
           </div>
         </div>
@@ -202,116 +130,43 @@
         <div class="row">
           <div class="swiper collection-swiper">
             <div class="swiper-wrapper">
+            <?php   
+    $collections_query = array(
+        'category_name' => get_option('roomset_category'),
+        'post_type'    =>    'post',
+        'order' => 'DESC', 
+        'orderby'    => 'date',
+        'posts_per_page' => 3
+        
+    );
+    global $post;
+    $collections_query = new WP_Query( $collections_query );
+    if( $collections_query->have_posts() ) : while( $collections_query->have_posts() ) : $collections_query->the_post();   
+?>
               <div class="swiper-slide overflow-hidden">
                 <div class="product-card">
                   <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                    <h3 class="card-title text-uppercase">
+                    <!-- <h3 class="card-title text-uppercase">
                       <a href="shop.html">Living Rooms</a>
-                    </h3>
+                    </h3> -->
                   </div>
-                  <div class="image-overlay position-relative">
-                    <div class="product-image">
-                      <img src="<?php bloginfo('template_url');?>/static/img/product-item4.jpg" alt="product-item" class="product-image img-fluid">
-                      <div class="text-box box-slide position-absolute">
-                        <div class="text-content p-5 bg-light">
-                          <h3>About Room</h3>
-                          <p>Assumenda temporibus quidem ipsam. fuga corporis iusto similique voluptates sint quibusdam.</p>
-                          <ul>
-                            <li>Various Types of Bedroom</li>
-                            <li>Different Size of Bed</li>
-                            <li>Comfortable and Clean Room</li>
-                          </ul>
-                          <a href="#" class="btn btn-normal mt-3">Learn More</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>                  
-                </div>
-              </div>
-              <div class="swiper-slide overflow-hidden">
-                <div class="product-card">
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                    <h3 class="card-title text-uppercase">
-                      <a href="shop.html">Bed Rooms</a>
-                    </h3>
-                  </div>
-                  <div class="image-overlay position-relative">
-                    <div class="product-image">
-                      <img src="<?php bloginfo('template_url');?>/static/img/product-item4.jpg" alt="product-item" class="product-image img-fluid">
 
-                      <div class="text-box box-slide position-absolute">
-                        <div class="text-content p-5 bg-light">
-                          <h3>About Room</h3>
-                          <p>Assumenda temporibus quidem ipsam. fuga corporis iusto similique voluptates sint quibusdam.</p>
-                          <ul>
-                            <li>Various Types of Bedroom</li>
-                            <li>Different Size of Bed</li>
-                            <li>Comfortable and Clean Room</li>
-                          </ul>
-                          <a href="#" class="btn btn-normal mt-3">Learn More</a>
-                        </div>
-                      </div>
-                    </div>
-                  <!-- product-image -->
-                  </div>                  
-                </div>
-              </div>
-              <div class="swiper-slide overflow-hidden">
-                <div class="product-card">
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                    <h3 class="card-title text-uppercase">
-                      <a href="shop.html">Kitchens</a>
-                    </h3>
-                  </div>
-                  <div class="image-overlay position-relative">
+                  <div class="image-overlay position-relative" width="100%">
                     <div class="product-image">
-                      <img src="<?php bloginfo('template_url');?>/static/img/product-item4.jpg" alt="product-item" class="product-image img-fluid">
-
-                      <div class="text-box box-slide position-absolute">
+                      <!-- <img src="<?php bloginfo('template_url');?>/static/img/product-item4.jpg" alt="product-item" class="product-image img-fluid"> -->
+                      <a href="<?php the_permalink() ?>">
+                <?php the_post_thumbnail('large', ['class' => 'img-fluid post-image']); ?></a>
+                      <div class="text-box box-slide position-absolute"  >
                         <div class="text-content p-5 bg-light">
-                          <h3>About Kitchen</h3>
-                          <p>Assumenda temporibus quidem ipsam. fuga corporis iusto similique voluptates sint quibusdam.</p>
-                          <ul>
-                            <li>Various Types of Bedroom</li>
-                            <li>Different Size of Bed</li>
-                            <li>Comfortable and Clean Room</li>
-                          </ul>
-                          <a href="#" class="btn btn-normal mt-3">Learn More</a>
+                        <h3><a href="<?php the_permalink() ?>"><?php echo $post->post_title ; ?></a></h3>
+                        <?php echo wp_trim_words($post->post_content, 35, ''); ; ?>
                         </div>
                       </div>
                     </div>
-                  <!-- product-image -->
-                  </div>                  
+                  </div> 
                 </div>
-              </div>
-              <div class="swiper-slide overflow-hidden">
-                <div class="product-card">
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                    <h3 class="card-title text-uppercase">
-                      <a href="shop.html">Guest Rooms</a>
-                    </h3>
-                  </div>
-                  <div class="image-overlay position-relative">
-                    <div class="product-image">
-                      <img src="<?php bloginfo('template_url');?>/static/img/product-item4.jpg" alt="product-item" class="product-image img-fluid">
-
-                      <div class="text-box box-slide position-absolute">
-                        <div class="text-content p-5 bg-light">
-                          <h3>About Kitchen</h3>
-                          <p>Assumenda temporibus quidem ipsam. fuga corporis iusto similique voluptates sint quibusdam.</p>
-                          <ul>
-                            <li>Various Types of Bedroom</li>
-                            <li>Different Size of Bed</li>
-                            <li>Comfortable and Clean Room</li>
-                          </ul>
-                          <a href="#" class="btn btn-normal mt-3">Learn More</a>
-                        </div>
-                      </div>
-                    </div>
-                  <!-- product-image -->
-                  </div>                  
-                </div>
-              </div>
+              </div> 
+              <?php  endwhile; endif; ?>  
             </div>
           </div>
         </div>
@@ -324,29 +179,24 @@
         <div class="row">
           <div class="col-md-12">
             <div class="display-header d-flex flex-wrap justify-content-between pb-3">
-              <h2 class="display-2 text-dark text-uppercase">Read Our Articles</h2>
-              <a href="blog.html" class="btn btn-medium btn-arrow btn-normal position-relative">
-                <span class="text-uppercase">See all articles</span>            
-                <svg class="arrow-right position-absolute" width="18" height="20">
-                  <use xlink:href="#arrow-right"></use>
-                </svg>
-              </a>
+              <h2 class="display-2 text-dark text-uppercase">Our Articles</h2>              
+              
             </div>
           </div>
         </div>
         <div class="row g-3 post-grid">
 <?php   
     $args_my_query = array(
-        'category_name' => 'blog',
+        'category_name' => get_option('articlesset_category'),
         'post_type'    =>    'post',
         'order' => 'DESC', 
-        'orderby'    => 'date',        
+        'orderby'    => 'date',
         'posts_per_page' => 3
         
     );
     global $post;
     $my_query = new WP_Query( $args_my_query );
-    if( $my_query->have_posts() ) : while( $my_query->have_posts() ) : $my_query->the_post();
+    if( $my_query->have_posts() ) : while( $my_query->have_posts() ) : $my_query->the_post();   
 ?>
   
           <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
@@ -359,9 +209,9 @@
               </div>
               <div class="card-body p-0 mt-4">
                 <h3 class="card-title">
-                  <a href="<?php the_permalink() ?>"><?php echo $post->post_title ; ?></a>
+                <a href="<?php the_permalink() ?>"><?php echo $post->post_title ; ?></a>
                 </h3>
-                <p><?php echo $post->post_title ; ?></p>
+                <p><?php echo wp_trim_words($post->post_content, 20, ''); ; ?></p>
                 
               </div>
             </div>

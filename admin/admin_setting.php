@@ -39,12 +39,16 @@ function namsan_admin_setting(){
 <h1><?php //echo esc_html( get_admin_page_title() ); ?></h1>
 <!-- Here are our tabs -->
     <nav class="nav-tab-wrapper">
+    <a href="?page=namsan&tab=homeset" class="nav-tab <?php if($tab==='homeset'):?>nav-tab-active<?php endif; ?>">HomeSetup</a>
     <a href="?page=namsan&tab=settings" class="nav-tab <?php if($tab==='settings'):?>nav-tab-active<?php endif; ?>">Settings</a>
     <a href="?page=namsan&tab=about" class="nav-tab <?php if($tab==='about'):?>nav-tab-active<?php endif; ?>">AboutUs</a>
     </nav>
 
     <div class="tab-content">
     <?php switch($tab) :
+    case 'homeset': 
+            homeset();
+    break;  
         case 'settings': 
             setup ();
         break;        
@@ -52,7 +56,7 @@ function namsan_admin_setting(){
             echo 'About';
         break;
         default:            
-            setup ();
+        homeset();
         break;
     endswitch; ?>
     </div> 
@@ -61,6 +65,15 @@ function namsan_admin_setting(){
   
   
 <?php
+}
+function homeset(){    
+    if (!empty($_POST['save-option-home']))
+    {
+        $homeset_category = $_POST['homeset_category'];
+
+        update_option('homeset_category', $homeset_category);
+    }
+    require_once ('admin_tab_home.php' ) ;      
 }
 
 function setup () {
@@ -108,8 +121,8 @@ function setup () {
 }
 ?>
 <?php function inframe_url (){ ?>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js.min.js"></script>
 <?php }?>

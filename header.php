@@ -27,7 +27,7 @@
 <div class="col-md-3">
   <a href="#"><img src="<?php bloginfo('template_url');?>/static/img/main-logo.png"></a>
 </div>
-<div class="col-md-9">
+<div class="col-md-8">
 <nav class="navbar navbar-expand-lg navbar-custom  navbar-light p-0">
 <div class="container-fluid">
 <a href="<?php echo site_url();?>" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
@@ -54,11 +54,23 @@ wp_nav_menu( array(
 ?>
 </div>
 </nav>
-
-
-
-
-
+</div>
+<div class="col-md-1 pt-2">
+<?php pll_the_languages(array('show_flags'=>1,'show_names'=>0));?>
 </div>
 </div>
 </div>
+<style>
+li.lang-item {
+    float: left;
+    padding-right: 10px;
+    list-style: none;
+    padding-top: 6px;
+}
+li.lang-item img {
+  float:left;
+  width: 25px !important;
+  
+}
+
+</style>
