@@ -26,142 +26,130 @@
     </div>
 </section>
 
-<section id="featured-products" class="padding-large pt-0">
-    <div class="container-fluid">
-      <div class="display-header pb-3 d-flex justify-content-between flex-wrap">
-        <h2 class="display-2 text-dark text-uppercase">Our Products</h2>
-        <a href="shop.html" class="btn btn-medium btn-arrow btn-normal position-relative">
-          <span class="text-uppercase">Shop All</span>
-          <svg class="arrow-right position-absolute" width="18" height="20">
-            <use xlink:href="#arrow-right"></use>
-          </svg>
-        </a>
-      </div>
-      <div class="feat-product-grid">
-        <div class="row justify-content-between">
-          <div class="col-lg-5">
-            <div class="swiper feat-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="image-holder">
-                    <img src="images/featured-large-item1.jpg" alt="room" class="img-fluid">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="image-holder">
-                    <img src="images/featured-large-item2.jpg" alt="room" class="img-fluid">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="image-holder">
-                    <img src="images/featured-large-item1.jpg" alt="room" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-7">
-            <div class="featured-masonry row">
-              <div class="col-lg-6">
-                <div class="row">
-                  <div class="featured-item col-12">
-                    <figure>
-                      <img src="images/featured-item2.jpg" alt="furniture" class="img-fluid">
-                      <figcaption>
-                        <h3 class="card-title text-center"><a href="#">Black Sofa Set</a></h3>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="featured-item col-12">
-                    <figure>
-                      <img src="images/featured-item4.jpg" alt="furniture" class="img-fluid">
-                      <figcaption>
-                        <h3 class="card-title text-center"><a href="#">Black Sofa Set</a></h3>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="featured-item col-12">
-                    <figure>
-                      <img src="images/featured-item2.jpg" alt="furniture" class="img-fluid">
-                      <figcaption>
-                        <h3 class="card-title text-center"><a href="#">Black Sofa Set</a></h3>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="featured-item col-12">
-                    <figure>
-                      <img src="images/featured-item4.jpg" alt="furniture" class="img-fluid">
-                      <figcaption>
-                        <h3 class="card-title text-center"><a href="#">Black Sofa Set</a></h3>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="featured-item col-12">
-                    <figure>
-                      <img src="images/featured-item2.jpg" alt="furniture" class="img-fluid">
-                      <figcaption>
-                        <h3 class="card-title text-center"><a href="#">Black Sofa Set</a></h3>
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="row">
-
-                  <div class="featured-item col-12">
-                    <figure>
-                      <img src="images/featured-item3.jpg" alt="furniture" class="img-fluid">
-                      <figcaption>
-                        <h3 class="card-title text-center"><a href="#">Black Sofa Set</a></h3>
-                      </figcaption>
-                    </figure>
-                  </div>
-
-                  <div class="featured-item col-12">
-                    <figure>
-                      <img src="images/featured-item5.jpg" alt="furniture" class="img-fluid">
-                      <figcaption>
-                        <h3 class="card-title text-center"><a href="#">Black Sofa Set</a></h3>
-                      </figcaption>
-                    </figure>
-                  </div>
-
-                  <div class="featured-item col-12">
-                    <figure>
-                      <img src="images/featured-item3.jpg" alt="furniture" class="img-fluid">
-                      <figcaption>
-                        <h3 class="card-title text-center"><a href="#">Black Sofa Set</a></h3>
-                      </figcaption>
-                    </figure>
-                  </div>
-
-                  <div class="featured-item col-12">
-                    <figure>
-                      <img src="images/featured-item5.jpg" alt="furniture" class="img-fluid">
-                      <figcaption>
-                        <h3 class="card-title text-center"><a href="#">Black Sofa Set</a></h3>
-                      </figcaption>
-                    </figure>
-                  </div>
-
-                  <div class="featured-item col-12">
-                    <figure>
-                      <img src="images/featured-item3.jpg" alt="furniture" class="img-fluid">
-                      <figcaption>
-                        <h3 class="card-title text-center"><a href="#">Black Sofa Set</a></h3>
-                      </figcaption>
-                    </figure>
-                  </div>
-
-                </div>
-
-              </div>
-            </div>
+<section id="featured-products" class="product-store position-relative padding-large mt-4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="display-header pb-3 d-flex justify-content-between flex-wrap col-md-12">
+            <h2 class="display-2 text-dark text-uppercase">Our Featured Products</h2> 
+            <a href="shop.html" class="btn btn-medium btn-arrow btn-normal position-relative">
+              <span class="text-uppercase">Shop All</span>            
+              <svg class="arrow-right position-absolute" width="18" height="20">
+                <use xlink:href="#arrow-right"></use>
+              </svg>
+            </a>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+        <div class="row">
+          <div id="featured-swiper" class="product-swiper col-md-12">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
+                    <div class="image-holder">
+                      <img src="images/product-item1.jpg" alt="product-item" class="product-image img-fluid">
+                    </div>
+                    <div class="cart-concern">
+                      <h3 class="card-title text-uppercase pt-3 text-primary">
+                        <a href="single-product.html" class="text-primary">Black Sofa Set</a>
+                      </h3>
+                      <div class="cart-info">
+                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART"><span>$200</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
+                    <div class="image-holder">
+                      <img src="images/product-item2.jpg" alt="product-item" class="product-image img-fluid">
+                    </div>
+                    <div class="cart-concern">
+                      <h3 class="card-title text-uppercase pt-3 text-primary">
+                        <a href="single-product.html" class="text-primary">Circle Dining Table</a>
+                      </h3>
+                      <div class="cart-info">
+                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
+                          <span>$200</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
+                    <div class="image-holder">
+                      <img src="images/product-item3.jpg" alt="product-item" class="product-image img-fluid">
+                    </div>
+                    <div class="cart-concern">
+                      <h3 class="card-title text-uppercase pt-3 text-primary">
+                        <a href="single-product.html" class="text-primary">Minimal Sofa</a>
+                      </h3>
+                      <div class="cart-info">
+                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
+                          <span>$200</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
+                    <div class="image-holder">
+                      <img src="images/product-item4.jpg" alt="product-item" class="product-image img-fluid">
+                    </div>
+                    <div class="cart-concern">
+                      <h3 class="card-title text-uppercase pt-3 text-primary">
+                        <a href="single-product.html" class="text-primary">Pattern Tea Table</a>
+                      </h3>
+                      <div class="cart-info">
+                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
+                          <span>$200</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
+                    <div class="image-holder">
+                      <img src="images/product-item5.jpg" alt="product-item" class="product-image img-fluid">
+                    </div>
+                    <div class="cart-concern">
+                      <h3 class="card-title text-uppercase pt-3 text-primary">
+                        <a href="single-product.html" class="text-primary">Black Sofa Set</a>
+                      </h3>
+                      <div class="cart-info">
+                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
+                          <span>$200</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
+                    <div class="image-holder">
+                      <img src="images/product-item6.jpg" alt="product-item" class="product-image img-fluid">
+                    </div>
+                    <div class="cart-concern">
+                      <h3 class="card-title text-uppercase pt-3 text-primary">
+                        <a href="single-product.html" class="text-primary">Minimal Sofa</a>
+                      </h3>
+                      <div class="cart-info">
+                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
+                          <span>$200</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination text-center mt-5"></div>
+          </div>
+        </div>
+      </div>      
+    </section>
+
 
 <?php get_footer(); ?>
