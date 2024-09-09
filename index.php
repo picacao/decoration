@@ -4,8 +4,7 @@
     <div class="banner-item"
       style="background-image: url(<?php bloginfo('template_url');?>/static/img/banner-image.jpg); background-repeat: no-repeat; width: 100%; height: 682px;background-position: center; display: flex; align-items: center;
     background-repeat: no-repeat;
-    width: 100%;   
-    background-position: center;
+    width: 100%;       
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
