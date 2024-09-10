@@ -15,9 +15,9 @@
     box-sizing: border-box;
       ">
       <div class="banner-content padding-large text-center mx-auto">
-        <h1 class="display-1 text-uppercase text-light pb-2"><?php echo $chose_lang['banner_title'];?></h1>
-        <p class="mx-auto text-light"><?php echo $chose_lang['banner_short'];?></p>
-        <a href="<?php echo home_url().$chose_lang['link_button'];?>" class="btn btn-medium btn-arrow btn-bg-light position-relative mt-5">
+        <h1 class="display-1 text-uppercase text-light pb-2" data-aos="fade-up"  data-aos-offset="200"><?php echo $chose_lang['banner_title'];?></h1>
+        <p class="mx-auto text-light" data-aos="fade-up"  data-aos-offset="200"><?php echo $chose_lang['banner_short'];?></p>
+        <a data-aos="fade-up"  data-aos-offset="200" href="<?php echo home_url().$chose_lang['link_button'];?>" class="btn btn-medium btn-arrow btn-bg-light position-relative mt-5">
           <span class="text-uppercase"><?php echo $chose_lang['banner_button'];?></span>
           <svg class="arrow-right position-absolute" width="18" height="20">
             <use xlink:href="#arrow-right"></use>
@@ -31,7 +31,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="display-header pb-3 d-flex justify-content-between flex-wrap col-md-12">
-            <h2 class="display-2 text-dark text-uppercase"><?php echo $chose_lang['our_products'];?></h2> 
+            <h2 class="display-2 text-dark text-uppercase" data-aos="fade-up"  data-aos-offset="200"><?php echo $chose_lang['our_products'];?></h2> 
             <a href="#" class="btn btn-medium btn-arrow btn-normal position-relative">
               <!-- <span class="text-uppercase">Shop All</span>            
               <svg class="arrow-right position-absolute" width="18" height="20">
@@ -43,7 +43,7 @@
         <div class="row">
           <div id="featured-swiper" class="product-swiper col-md-12">
             <div class="swiper">
-              <div class="swiper-wrapper">
+              <div class="swiper-wrapper" data-aos="fade-up"  data-aos-offset="200">
     <?php   
     $featured_query = array(
         'category_name' => get_option('productsset_category'),
@@ -84,11 +84,11 @@
         <div class="row">
           <div class="review-content position-relative">
             <div class="swiper-icon swiper-arrow swiper-arrow-prev position-absolute d-flex align-items-center justify-content-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <svg data-aos="fade-up"  data-aos-offset="200" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
 </svg>
             </div>
-            <div class="swiper testimonial-swiper">
+            <div class="swiper testimonial-swiper" data-aos="fade-up"  data-aos-offset="200">
               <div class="quotation text-center">
                 <svg class="quote">
                   <use xlink:href="#quote" />
@@ -125,7 +125,7 @@
               </div>
             </div>
             <div class="swiper-icon swiper-arrow swiper-arrow-next position-absolute d-flex align-items-center justify-content-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <svg data-aos="fade-up"  data-aos-offset="200" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
 </svg>
             </div>
@@ -138,7 +138,7 @@
     <section id="collections" class="position-relative padding-large container">
       <div class="container-fluid">
         <div class="row">
-          <div class="swiper collection-swiper">
+          <div class="swiper collection-swiper" data-aos="fade-up"  data-aos-offset="200">
             <div class="swiper-wrapper">
             <?php   
     $collections_query = array(
@@ -184,7 +184,7 @@
       <div class="swiper-pagination position-absolute text-center"></div>
     </section>
 
-    <section id="latest-blog" class="container">
+    <section id="latest-blog" class="container" data-aos="fade-up"  data-aos-offset="200">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
