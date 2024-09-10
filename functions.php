@@ -6,9 +6,12 @@ require_once get_theme_file_path ( 'wp_bootstrap_navwalker.php' );
 
 // Required Wiget
 require_once get_theme_file_path ( 'include/wiget.php' );
+require_once get_theme_file_path ( 'include/wiget-hk.php' );
 
 // Required Admin
 require_once get_theme_file_path ( 'admin/admin_setting.php' );
+//
+require_once get_theme_file_path ( 'include/choose_languages.php' );
 
 // Theme setup
 function wpb_theme_setup(){ 

@@ -1,5 +1,8 @@
 <?php get_header(); ?>
-
+<?php 
+  $currentlang = get_bloginfo('language');
+  $chose_lang = choose_languages();  
+?>
 <section id="billboard" class="overflow-hidden style2">
     <div class="banner-item"
       style="background-image: url(<?php bloginfo('template_url');?>/static/img/banner-image.jpg); background-repeat: no-repeat; width: 100%; height: 682px;background-position: center; display: flex; align-items: center;
@@ -12,12 +15,10 @@
     box-sizing: border-box;
       ">
       <div class="banner-content padding-large text-center mx-auto">
-        <h1 class="display-1 text-uppercase text-light pb-2">wooden table set</h1>
-        <p class="mx-auto text-light">Aliquet donec ut arcu risus amet mattis diam gravida. Ac vestibulum quis proin in
-          aliquam et et auctor. Amet urna est arcu euismod egestas morbi nunc lacus. Nec id rutrum mauris commodo
-          habitant amet quisque. Velit ornare pellentesque facilisi in odio nibh.</p>
-        <a href="shop.html" class="btn btn-medium btn-arrow btn-bg-light position-relative mt-5">
-          <span class="text-uppercase">Shop Now</span>
+        <h1 class="display-1 text-uppercase text-light pb-2"><?php echo $chose_lang['banner_title'];?></h1>
+        <p class="mx-auto text-light"><?php echo $chose_lang['banner_short'];?></p>
+        <a href="<?php echo home_url().$chose_lang['link_button'];?>" class="btn btn-medium btn-arrow btn-bg-light position-relative mt-5">
+          <span class="text-uppercase"><?php echo $chose_lang['banner_button'];?></span>
           <svg class="arrow-right position-absolute" width="18" height="20">
             <use xlink:href="#arrow-right"></use>
           </svg>
@@ -30,7 +31,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="display-header pb-3 d-flex justify-content-between flex-wrap col-md-12">
-            <h2 class="display-2 text-dark text-uppercase">Our Products</h2> 
+            <h2 class="display-2 text-dark text-uppercase"><?php echo $chose_lang['our_products'];?></h2> 
             <a href="#" class="btn btn-medium btn-arrow btn-normal position-relative">
               <!-- <span class="text-uppercase">Shop All</span>            
               <svg class="arrow-right position-absolute" width="18" height="20">
@@ -97,18 +98,27 @@
                 <div class="swiper-slide text-center d-flex justify-content-center">
                   <div class="review-item col-md-10">
                     <i class="icon icon-review"></i>
-                    <blockquote class="fs-4">“Tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen dise sagittis lorem habi tasse morbi.”</blockquote>
+                    <blockquote class="fs-4"><?php echo $chose_lang['quote_content_1'];?></blockquote>
                     <div class="author-detail">
-                      <div class="name text-primary text-uppercase pt-2">Hana Kimusaki</div>
+                      <div class="name text-primary text-uppercase pt-2"><?php echo $chose_lang['quote_author_1'];?></div>
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide text-center d-flex justify-content-center">
                   <div class="review-item col-md-10">
                     <i class="icon icon-review"></i>
-                    <blockquote class="fs-4">“A blog is a digital publication that can complement a website or exist independently. A blog may include articles, short posts, listicles, infographics, videos, and other digital content.”</blockquote>
+                    <blockquote class="fs-4"><?php echo $chose_lang['quote_content_2'];?></blockquote>
                     <div class="author-detail">
-                      <div class="name text-primary text-uppercase pt-2">Jennie Rose</div>
+                      <div class="name text-primary text-uppercase pt-2"><?php echo $chose_lang['quote_author_2'];?></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide text-center d-flex justify-content-center">
+                  <div class="review-item col-md-10">
+                    <i class="icon icon-review"></i>
+                    <blockquote class="fs-4"><?php echo $chose_lang['quote_content_3'];?></blockquote>
+                    <div class="author-detail">
+                      <div class="name text-primary text-uppercase pt-2"><?php echo $chose_lang['quote_author_3'];?></div>
                     </div>
                   </div>
                 </div>
@@ -179,7 +189,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="display-header d-flex flex-wrap justify-content-between pb-3">
-              <h2 class="display-2 text-dark text-uppercase">Our Articles</h2>              
+              <h2 class="display-2 text-dark text-uppercase"><?php echo $chose_lang['our_articles'];?></h2>              
               
             </div>
           </div>

@@ -1,17 +1,42 @@
+<?php $currentlang = get_bloginfo('language'); ?>
 <footer class="mt-5">
 <div class="container">
     <div class="row pb-4">
         <div class="col-md-3">
-        <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Right') );?>
+        <?php         
+        if($currentlang == "en-US"){
+            if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Right') );
+        } elseif($currentlang == "zh-HK"){
+            if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Right HK') );
+        }
+        ?>
         </div>
         <div class="col-md-3">
-        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Mid One'));?>
+        <?php         
+        if($currentlang == "en-US"){
+            if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Mid One'));
+        } elseif($currentlang == "zh-HK"){
+            if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Mid One HK')); 
+        }
+        ?>
         </div>
         <div class="col-md-3">
-        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Mid Two'));?>
+        <?php
+        if($currentlang == "en-US"){
+            if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Mid Two'));
+        } elseif($currentlang == "zh-HK"){
+            if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Mid Two HK'));
+        }
+        ?>
         </div>
         <div class="col-md-3">
-        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Left') );?>
+        <?php         
+        if($currentlang == "en-US"){
+            if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Left') );
+        } elseif($currentlang == "zh-HK"){
+            if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Left HK') );
+        }
+        ?>
         </div>
     </div>
     <div class="row border-top text-center pt-4 pb-4">

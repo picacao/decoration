@@ -22,10 +22,11 @@
 <?php wp_head();?>
 </head>
 <body <?php body_class(); ?>>
+
 <div class="container">
 <div class="row mt-2">
 <div class="col-md-3">
-  <a href="#"><img src="<?php bloginfo('template_url');?>/static/img/main-logo.png"></a>
+  <a href="<?php echo site_url();?>"><img src="<?php bloginfo('template_url');?>/static/img/main-logo.png"></a>
 </div>
 <div class="col-md-8">
 <nav class="navbar navbar-expand-lg navbar-custom  navbar-light p-0">
@@ -34,11 +35,11 @@
 
  </a>
 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="toggler-icon top-bar"><i class="bi bi-bar-chart-steps"></i></span>
-        <span class="toggler-icon middle-bar"></span>
-        <span class="toggler-icon bottom-bar"></span>
-      </button>
+aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="toggler-icon top-bar"><i class="bi bi-bar-chart-steps"></i></span>
+<span class="toggler-icon middle-bar"></span>
+<span class="toggler-icon bottom-bar"></span>
+</button>
 <?php
 wp_nav_menu( array(
 'menu'=> 'primary',

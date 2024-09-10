@@ -1,5 +1,5 @@
 <?php
-function new_widgets_init() {
+function new_widgets_init_hk() {
         
     register_sidebar( array(
       'name' => 'Side Bar HK',
@@ -47,6 +47,6 @@ function new_widgets_init() {
         'after_title' => '</h3>',
     ) );
     
-  } add_action( 'init', 'new_widgets_init' );
+  } add_action( 'init', 'new_widgets_init_hk' );
   
 ?>
