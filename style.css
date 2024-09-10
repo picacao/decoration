@@ -14,6 +14,7 @@ Text Domain: sinomax
 Tags: sinomax
 */
 @import url("static/css/bootstrap-icons.css");
+@import url("static/css/aos.css");
 @import url("static/css/main.css");
 @import url("static/css/menu.css");
 @import url("static/css/theme.css");

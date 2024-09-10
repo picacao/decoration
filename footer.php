@@ -46,7 +46,10 @@
     </div>
 </div>
 </footer>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 <?php wp_footer( );?>
 <script src="<?php bloginfo('template_url');?>/static/js/swiper-bundle.min.js"></script>
 </body>
