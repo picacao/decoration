@@ -36,7 +36,11 @@
  </a>
 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span class="toggler-icon top-bar"><i class="bi bi-bar-chart-steps"></i></span>
+<span class="toggler-icon top-bar">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path d="M2 3.5A.5.5 0 0 1 2.5 3h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zM2.5 7a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zM2 11.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+</svg>
+</span>
 <span class="toggler-icon middle-bar"></span>
 <span class="toggler-icon bottom-bar"></span>
 </button>
@@ -56,7 +60,7 @@ wp_nav_menu( array(
 </div>
 </nav>
 </div>
-<div class="col-md-1 pt-2">
+<div class="col-md-1 col-sm-6 pt-2 d-flex justify-content-center">
 <?php pll_the_languages(array('show_flags'=>1,'show_names'=>0));?>
 </div>
 </div>
