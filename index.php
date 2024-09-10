@@ -64,7 +64,7 @@
                     <?php the_post_thumbnail('large', ['class' => 'img-fluid post-image']); ?></a>
                     </div>
                     <div class="cart-concern">
-                      <h3 class="card-title text-uppercase pt-3 text-primary">
+                      <h3 class="card-title pt-3 text-primary">
                       <a href="<?php the_permalink() ?>"><?php echo $post->post_title ; ?></a>
                       </h3>
                      
