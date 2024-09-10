@@ -64,7 +64,7 @@
                     <?php the_post_thumbnail('large', ['class' => 'img-fluid post-image']); ?></a>
                     </div>
                     <div class="cart-concern">
-                      <h3 class="card-title pt-3 text-primary">
+                      <h3 class="card-title pt-3 ">
                       <a href="<?php the_permalink() ?>"><?php echo $post->post_title ; ?></a>
                       </h3>
                      
@@ -100,7 +100,7 @@
                     <i class="icon icon-review"></i>
                     <blockquote class="fs-4"><?php echo $chose_lang['quote_content_1'];?></blockquote>
                     <div class="author-detail">
-                      <div class="name text-primary text-uppercase pt-2"><?php echo $chose_lang['quote_author_1'];?></div>
+                      <div class="name  text-uppercase pt-2"><?php echo $chose_lang['quote_author_1'];?></div>
                     </div>
                   </div>
                 </div>
@@ -109,7 +109,7 @@
                     <i class="icon icon-review"></i>
                     <blockquote class="fs-4"><?php echo $chose_lang['quote_content_2'];?></blockquote>
                     <div class="author-detail">
-                      <div class="name text-primary text-uppercase pt-2"><?php echo $chose_lang['quote_author_2'];?></div>
+                      <div class="name  text-uppercase pt-2"><?php echo $chose_lang['quote_author_2'];?></div>
                     </div>
                   </div>
                 </div>
@@ -118,7 +118,7 @@
                     <i class="icon icon-review"></i>
                     <blockquote class="fs-4"><?php echo $chose_lang['quote_content_3'];?></blockquote>
                     <div class="author-detail">
-                      <div class="name text-primary text-uppercase pt-2"><?php echo $chose_lang['quote_author_3'];?></div>
+                      <div class="name  text-uppercase pt-2"><?php echo $chose_lang['quote_author_3'];?></div>
                     </div>
                   </div>
                 </div>
