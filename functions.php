@@ -99,6 +99,13 @@ function wp_category_template() {
   }
   return $t;
 }
+
+//
+function enqueue_media_uploader_scripts() {
+  wp_enqueue_media(); // Để tải các script của WordPress Media Uploader
+  wp_enqueue_script('custom-media-uploader', get_template_directory_uri() . '/static/js/custom-media-uploader.js', array('jquery'), null, true);
+}
+add_action('admin_enqueue_scripts', 'enqueue_media_uploader_scripts');
   
 // Begin Plugin mycode - register shortcode plugin
 add_shortcode('phpinclude', 'PHP_Include');

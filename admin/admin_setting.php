@@ -69,9 +69,17 @@ function namsan_admin_setting(){
 function homeset(){    
     if (!empty($_POST['save-option-home']))
     {
-        $homeset_category = $_POST['homeset_category'];
+        $file_url_banner = $_POST['file_url_banner'];
 
-        update_option('homeset_category', $homeset_category);
+        $productsset_category = $_POST['productsset_category'];
+        $roomset_category = $_POST['roomset_category'];
+        $articlesset_category = $_POST['articlesset_category'];
+
+        update_option('file_url_banner', $file_url_banner);
+
+        update_option('productsset_category', $productsset_category);
+        update_option('roomset_category', $roomset_category);
+        update_option('articlesset_category', $articlesset_category);
     }
     require_once ('admin_tab_home.php' ) ;      
 }
@@ -122,7 +130,7 @@ function setup () {
 ?>
 <?php function inframe_url (){ ?>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js.min.js"></script>
 <?php }?>

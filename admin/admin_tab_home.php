@@ -1,6 +1,17 @@
 <?php inframe_url ();?>
 <form method="post" action="">
 
+
+    <h4 class="mt-3">Banner File</h4>
+    <div class="row pt-2 mb-3">
+        <div class="col-md-2"><label>Banner Logo</label></div>
+        <div class="col-md-8">        
+        <input type="text"  id="file_url_banner" name="file_url_banner" value="<?php echo get_option( 'file_url_banner' )?>" class="form-control" readonly>
+        <input type="button" id="load_media_button" class="button" value="Choose File Media">
+
+        </div> 
+    </div>
+
     
     <h4 class="mt-3">Our Products</h4>
     <div class="row pt-2 mb-3">
