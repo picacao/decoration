@@ -1,7 +1,18 @@
 <?php get_header(); ?>
 <?php 
   $currentlang = get_bloginfo('language');
-  $chose_lang = choose_languages();  
+  $chose_lang = choose_languages();
+
+  if($currentlang=="en-US"){
+    $category_01 = get_option('productsset_category');
+    $category_02 = get_option('roomset_category');
+    $category_03 = get_option('articlesset_category');
+  }elseif($currentlang=="zh-HK")
+  { 
+    $category_01 = get_option('productsset_category_hk');
+    $category_02 = get_option('roomset_category_hk');
+    $category_03 = get_option('articlesset_category_hk');
+  }
 ?>
 <section id="billboard" class="overflow-hidden style2">
     <div class="banner-item"
@@ -46,7 +57,7 @@
               <div class="swiper-wrapper" data-aos="fade-up"  data-aos-offset="200">
     <?php   
     $featured_query = array(
-        'category_name' => get_option('productsset_category'),
+        'category_name' => $category_01,
         'post_type'    =>    'post',
         'order' => 'DESC', 
         'orderby'    => 'date',
@@ -142,7 +153,7 @@
             <div class="swiper-wrapper">
             <?php   
     $collections_query = array(
-        'category_name' => get_option('roomset_category'),
+        'category_name' => $category_02,
         'post_type'    =>    'post',
         'order' => 'DESC', 
         'orderby'    => 'date',
@@ -197,7 +208,7 @@
         <div class="row g-3 post-grid">
 <?php   
     $args_my_query = array(
-        'category_name' => get_option('articlesset_category'),
+        'category_name' => $category_03,
         'post_type'    =>    'post',
         'order' => 'DESC', 
         'orderby'    => 'date',

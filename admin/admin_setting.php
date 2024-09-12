@@ -75,11 +75,19 @@ function homeset(){
         $roomset_category = $_POST['roomset_category'];
         $articlesset_category = $_POST['articlesset_category'];
 
+        $productsset_category_hk = $_POST['productsset_category_hk'];
+        $roomset_category_hk = $_POST['roomset_category_hk'];
+        $articlesset_category_hk = $_POST['articlesset_category_hk'];
+
         update_option('file_url_banner', $file_url_banner);
 
         update_option('productsset_category', $productsset_category);
         update_option('roomset_category', $roomset_category);
         update_option('articlesset_category', $articlesset_category);
+
+        update_option('productsset_category_hk', $productsset_category_hk);
+        update_option('roomset_category_hk', $roomset_category_hk);
+        update_option('articlesset_category_hk', $articlesset_category_hk);
     }
     require_once ('admin_tab_home.php' ) ;      
 }

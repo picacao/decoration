@@ -16,7 +16,7 @@
     <h4 class="mt-3">Our Products</h4>
     <div class="row pt-2 mb-3">
         <div class="col-md-2"><label>Category Products</label></div>
-        <div class="col-md-8">        
+        <div class="col-md-5">        
         <?php
         $sl_products_categogry= get_option('productsset_category');
         $categories_products = get_categories();        
@@ -31,12 +31,27 @@
         echo '</select>';
         ?>
         </div> 
+        <div class="col-md-5">
+        <?php
+        $sl_products_categogry_hk= get_option('productsset_category_hk');
+        $categories_products_hk = get_categories();        
+        echo '<select name="productsset_category_hk" class="form-select">';        
+        foreach ($categories_products_hk as $category_products_hk) {
+            echo '<option value="' . $category_products_hk->slug . '"';
+            if ($sl_products_categogry_hk == $category_products_hk->slug) {
+                echo ' selected';
+            }
+            echo '>' . $category_products_hk->name . '</option>';
+        }        
+        echo '</select>';
+        ?> 
+        </div>
     </div>
 
     <h4 class="mt-3">Our Room</h4>
     <div class="row pt-2 mb-3">
         <div class="col-md-2"><label>Category Room</label></div>
-        <div class="col-md-8">        
+        <div class="col-md-5">        
         <?php
         $sl_room_categogry= get_option('roomset_category');
         $categories_room = get_categories();        
@@ -51,12 +66,27 @@
         echo '</select>';
         ?>
         </div> 
+        <div class="col-md-5">
+        <?php
+        $sl_room_categogry_hk= get_option('roomset_category_hk');
+        $categories_room_hk = get_categories();        
+        echo '<select name="roomset_category_hk" class="form-select">';        
+        foreach ($categories_room_hk as $category_room_hk) {
+            echo '<option value="' . $category_room_hk->slug . '"';
+            if ($sl_room_categogry_hk == $category_room_hk->slug) {
+                echo ' selected';
+            }
+            echo '>' . $category_room_hk->name . '</option>';
+        }        
+        echo '</select>';
+        ?>
+        </div>
     </div>
 
     <h4 class="mt-3">Our Articles</h4>
     <div class="row pt-2 mb-3">
         <div class="col-md-2"><label>Category Articles</label></div>
-        <div class="col-md-8">        
+        <div class="col-md-5">        
         <?php
         $sl_articles_categogry= get_option('articlesset_category');
         $categories_articles = get_categories();        
@@ -67,6 +97,21 @@
                 echo ' selected';
             }
             echo '>' . $category_articles->name . '</option>';
+        }        
+        echo '</select>';
+        ?>
+        </div>
+        <div class="col-md-5">
+        <?php
+        $sl_articles_categogry_hk= get_option('articlesset_category_hk');
+        $categories_articles_hk = get_categories();        
+        echo '<select name="articlesset_category_hk" class="form-select">';        
+        foreach ($categories_articles_hk as $category_articles_hk) {
+            echo '<option value="' . $category_articles_hk->slug . '"';
+            if ($sl_articles_categogry_hk == $category_articles_hk->slug) {
+                echo ' selected';
+            }
+            echo '>' . $category_articles_hk->name . '</option>';
         }        
         echo '</select>';
         ?>
