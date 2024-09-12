@@ -49,7 +49,7 @@
     </div>
 
     <h4 class="mt-3">Our Room</h4>
-    <div class="row pt-2 mb-3">
+    <div class="row pt-2 mb-3" hidden>
         <div class="col-md-2"><label>Category Room</label></div>
         <div class="col-md-5">        
         <?php

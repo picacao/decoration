@@ -28,12 +28,12 @@
       <div class="banner-content padding-large text-center mx-auto">
         <h1 class="display-1 text-uppercase text-light pb-2" data-aos="fade-up"  data-aos-offset="200"><?php echo $chose_lang['banner_title'];?></h1>
         <p class="mx-auto text-light" data-aos="fade-up"  data-aos-offset="200"><?php echo $chose_lang['banner_short'];?></p>
-        <a data-aos="fade-up"  data-aos-offset="200" href="<?php echo home_url().$chose_lang['link_button'];?>" class="btn btn-medium btn-arrow btn-bg-light position-relative mt-5">
+        <!-- <a data-aos="fade-up"  data-aos-offset="200" href="<?php echo home_url().$chose_lang['link_button'];?>" class="btn btn-medium btn-arrow btn-bg-light position-relative mt-5">
           <span class="text-uppercase"><?php echo $chose_lang['banner_button'];?></span>
           <svg class="arrow-right position-absolute" width="18" height="20">
             <use xlink:href="#arrow-right"></use>
           </svg>
-        </a>
+        </a> -->
       </div>
     </div>
 </section>
@@ -146,12 +146,12 @@
       <div class="swiper-pagination text-center position-absolute"></div>
     </section>
 
-    <section id="collections" class="position-relative padding-large container">
+    <section hidden id="collections" class="position-relative padding-large container">
       <div class="container-fluid">
         <div class="row">
           <div class="swiper collection-swiper" data-aos="fade-up"  data-aos-offset="200">
             <div class="swiper-wrapper">
-            <?php   
+    <?php   
     $collections_query = array(
         'category_name' => $category_02,
         'post_type'    =>    'post',

@@ -1,5 +1,5 @@
 <?php $currentlang = get_bloginfo('language'); ?>
-<footer class="mt-5" data-aos="fade-up"  data-aos-offset="200">
+<footer class="mt-5">
 <div class="container">
     <div class="row pb-4">
         <div class="col-md-3">
