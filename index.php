@@ -61,7 +61,7 @@
         'post_type'    =>    'post',
         'order' => 'DESC', 
         'orderby'    => 'date',
-        'posts_per_page' => 3
+        // 'posts_per_page' => 3
         
     );
     global $post;
