@@ -43,11 +43,11 @@
         <div class="row">
           <div class="display-header pb-3 d-flex justify-content-between flex-wrap col-md-12">
             <h2 class="display-2 text-dark text-uppercase" data-aos="fade-up"  data-aos-offset="200"><?php echo $chose_lang['our_products'];?></h2> 
-            <a href="#" class="btn btn-medium btn-arrow btn-normal position-relative">
-              <!-- <span class="text-uppercase">Shop All</span>            
+            <a href="<?php echo $chose_lang['link_view_all'];?>" class="btn btn-medium btn-arrow btn-normal position-relative">
+              <span class="text-uppercase"><?php echo $chose_lang['view_all'];?></span>            
               <svg class="arrow-right position-absolute" width="18" height="20">
                 <use xlink:href="#arrow-right"></use>
-              </svg> -->
+              </svg> 
             </a>
           </div>
         </div>
